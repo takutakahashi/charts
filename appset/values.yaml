@@ -1,8 +1,8 @@
 api:
-  revision: test
+  revision:
 store:
-  revision: beta
+  revision:
 rating:
-  revision: alpha
+  revision:
 frontend:
-  revision: 1.1
+  revision:
