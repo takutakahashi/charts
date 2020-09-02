@@ -1,0 +1,8 @@
+api:
+  revision: test
+store:
+  revision: beta
+rating:
+  revision: alpha
+frontend:
+  revision: 1.1

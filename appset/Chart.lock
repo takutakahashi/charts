@@ -1,0 +1,15 @@
+dependencies:
+- name: webapp
+  repository: https://takutakahashi.github.io/charts
+  version: 0.1.2
+- name: webapp
+  repository: https://takutakahashi.github.io/charts
+  version: 0.1.2
+- name: webapp
+  repository: https://takutakahashi.github.io/charts
+  version: 0.1.2
+- name: webapp
+  repository: https://takutakahashi.github.io/charts
+  version: 0.1.2
+digest: sha256:f1050c7e2665ed7e19f29571007328e1767913015d9ebfa676d6d8a15c23f9fc
+generated: "2020-09-02T21:22:47.370722336+09:00"
