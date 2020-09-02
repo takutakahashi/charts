@@ -1,14 +1,44 @@
 apiVersion: v1
 entries:
+  multideploy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-02T21:05:03.649343197+09:00"
+    dependencies:
+    - alias: new-subchart-1
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.0
+    - alias: prometheus
+      name: prometheus
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 11.12.0
+    description: A Helm chart for Kubernetes
+    digest: d0bfd57c738591337f5cd0a760ad1954e18c7532d08a4e68efc3b79654fe7e94
+    name: multideploy
+    type: application
+    urls:
+    - multideploy/multideploy-0.1.0.tgz
+    version: 0.1.0
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-02T19:55:16.405103242+09:00"
+    created: "2020-09-02T21:05:03.650136204+09:00"
     description: A Helm chart for Kubernetes
-    digest: ae4856e3b68a490ba792e1e1b4d769f7a0839a2f1a170260455234288cd2764d
+    digest: 54dcb5df9751ea3df35f74209d7e73e877de74c16ed187f6cbbdaba5d0e2fa5d
+    name: webapp
+    type: application
+    urls:
+    - webapp/webapp-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-02T21:05:03.649739496+09:00"
+    description: A Helm chart for Kubernetes
+    digest: fe741b64fb9462b4a50f09c1d8ada91436a0b335d49acf0c3671f3982265a28b
     name: webapp
     type: application
     urls:
     - webapp/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-02T19:55:16.404579586+09:00"
+generated: "2020-09-02T21:05:03.644582213+09:00"
