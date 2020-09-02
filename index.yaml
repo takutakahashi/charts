@@ -3,7 +3,34 @@ entries:
   appset:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-02T21:53:50.211564603+09:00"
+    created: "2020-09-02T21:57:29.274481017+09:00"
+    dependencies:
+    - alias: api
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.2
+    - alias: store
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.2
+    - alias: rating
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.2
+    - alias: frontend
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.2
+    description: A Helm chart for Kubernetes
+    digest: 21f972bbebd41fdb8fc4c941624284b98f319cb5bdd2d25ee47907f2bb2d2452
+    name: appset
+    type: application
+    urls:
+    - appset/appset-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-02T21:57:29.269328691+09:00"
     dependencies:
     - alias: api
       name: webapp
@@ -31,7 +58,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-02T21:53:50.213261111+09:00"
+    created: "2020-09-02T21:57:29.281042338+09:00"
     description: A Helm chart for Kubernetes
     digest: 76908e0446f329fda3e7a5eda2af3b4102483924806cd8b2142cc46dfab46781
     name: webapp
@@ -41,7 +68,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-02T21:53:50.21229072+09:00"
+    created: "2020-09-02T21:57:29.277617128+09:00"
     description: A Helm chart for Kubernetes
     digest: 54dcb5df9751ea3df35f74209d7e73e877de74c16ed187f6cbbdaba5d0e2fa5d
     name: webapp
@@ -51,7 +78,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-02T21:53:50.211913016+09:00"
+    created: "2020-09-02T21:57:29.275921544+09:00"
     description: A Helm chart for Kubernetes
     digest: fe741b64fb9462b4a50f09c1d8ada91436a0b335d49acf0c3671f3982265a28b
     name: webapp
@@ -59,4 +86,4 @@ entries:
     urls:
     - webapp/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-02T21:53:50.210343697+09:00"
+generated: "2020-09-02T21:57:29.264809696+09:00"
