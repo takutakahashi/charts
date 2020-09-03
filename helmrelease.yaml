@@ -13,8 +13,14 @@ spec:
     name: appset
   values:
     api:
-      image: nginx
+      repository: nginx
       revision: latest
     frontend:
-      image: nginx
-      revision: takutakahashi
+      repository: nginx
+      revision: latest
+    store:
+      repository: nginx
+      revision: latest
+    rating:
+      repository: nginx
+      revision: latest
