@@ -9,7 +9,7 @@ spec:
     enable: true
   chart:
     repository: https://takutakahashi.github.io/charts
-    version: 0.2.4
+    version: 0.2.7
     name: appset
   values:
     api:
