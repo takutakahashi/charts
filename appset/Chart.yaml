@@ -25,17 +25,17 @@ appVersion: 1.16.0
 dependencies:
   - name: webapp
     repository: https://takutakahashi.github.io/charts
-    version: 0.1.3
+    version: 0.1.4
     alias: api
   - name: webapp
     repository: https://takutakahashi.github.io/charts
-    version: 0.1.3
+    version: 0.1.4
     alias: store
   - name: webapp
     repository: https://takutakahashi.github.io/charts
-    version: 0.1.3
+    version: 0.1.4
     alias: rating
   - name: webapp
     repository: https://takutakahashi.github.io/charts
-    version: 0.1.3
+    version: 0.1.4
     alias: frontend
