@@ -3,7 +3,7 @@ entries:
   appset:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T09:55:57.903684352Z"
+    created: "2020-09-03T10:36:30.13232252Z"
     dependencies:
     - alias: api
       name: webapp
@@ -22,7 +22,7 @@ entries:
       repository: https://takutakahashi.github.io/charts
       version: 0.1.3
     description: A Helm chart for Kubernetes
-    digest: 9b66d5a8d2e4b01f49947ee335ddfb04c6cbe0863f36b67d31cb029616681128
+    digest: 26e706ae3c67754624d07b19bcddb72c591f2a94d5b0d4e5d2e0f3c021a8fd98
     name: appset
     type: application
     urls:
@@ -30,7 +30,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T09:55:57.900392294Z"
+    created: "2020-09-03T10:36:30.131481104Z"
     dependencies:
     - alias: api
       name: webapp
@@ -58,9 +58,9 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T09:55:57.904308164Z"
+    created: "2020-09-03T10:36:30.13281733Z"
     description: A Helm chart for Kubernetes
-    digest: 7f29bd38b8b8c59877d9acc3bfb81d7cc43ac78a94aa8687d4cf0cb5b5c872a2
+    digest: ae6ac7ab4b3b7a53f36d67a83e6d12cfb95d5d2255429463292480cf1add1bf4
     name: webapp
     type: application
     urls:
@@ -76,4 +76,4 @@ entries:
     urls:
     - https://takutakahashi.github.io/charts/webapp/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-03T09:55:57.89345377Z"
+generated: "2020-09-03T10:36:30.12512538Z"
