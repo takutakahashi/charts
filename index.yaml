@@ -3,7 +3,34 @@ entries:
   appset:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.746584401Z"
+    created: "2020-09-03T12:14:55.953532186Z"
+    dependencies:
+    - alias: api
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.6
+    - alias: store
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.6
+    - alias: rating
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.6
+    - alias: frontend
+      name: webapp
+      repository: https://takutakahashi.github.io/charts
+      version: 0.1.6
+    description: A Helm chart for Kubernetes
+    digest: 40b164c55dfc3d297a4557b7bce44a21fd9e770b3d32cab20771e44357533571
+    name: appset
+    type: application
+    urls:
+    - https://takutakahashi.github.io/charts/appset-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-09-03T12:14:55.952748566Z"
     dependencies:
     - alias: api
       name: webapp
@@ -30,7 +57,7 @@ entries:
     version: 0.2.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.745556499Z"
+    created: "2020-09-03T12:14:55.951381531Z"
     dependencies:
     - alias: api
       name: webapp
@@ -57,7 +84,7 @@ entries:
     version: 0.2.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.743877797Z"
+    created: "2020-09-03T12:14:55.950655913Z"
     dependencies:
     - alias: api
       name: webapp
@@ -84,7 +111,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.742394895Z"
+    created: "2020-09-03T12:14:55.949888293Z"
     dependencies:
     - alias: api
       name: webapp
@@ -111,7 +138,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.741544994Z"
+    created: "2020-09-03T12:14:55.948947069Z"
     dependencies:
     - alias: api
       name: webapp
@@ -138,7 +165,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.739945391Z"
+    created: "2020-09-03T12:14:55.948076347Z"
     dependencies:
     - alias: api
       name: webapp
@@ -165,7 +192,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.73870939Z"
+    created: "2020-09-03T12:14:55.947228926Z"
     dependencies:
     - alias: api
       name: webapp
@@ -193,9 +220,9 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.748758904Z"
+    created: "2020-09-03T12:14:55.955494935Z"
     description: A Helm chart for Kubernetes
-    digest: 2ac2afc00ac2db27a0c302d21bd13079d810d8187107eecc0ccb029cfeb97560
+    digest: aba1d5e60df3aadbfdb75edeff2ea5406c29b0417ce309f8f58b4b012947ab66
     name: webapp
     type: application
     urls:
@@ -203,7 +230,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.748239803Z"
+    created: "2020-09-03T12:14:55.954984622Z"
     description: A Helm chart for Kubernetes
     digest: 6e3da5ccbf4b054ae7ed1221e341213f9397f61b56b24f9a6547aab3724de3af
     name: webapp
@@ -213,7 +240,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.747726002Z"
+    created: "2020-09-03T12:14:55.95448331Z"
     description: A Helm chart for Kubernetes
     digest: 68054246fc6b29cef907066ff09b23c75c2a3c919a541a3043cf96908d63d019
     name: webapp
@@ -223,7 +250,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T11:06:11.747127502Z"
+    created: "2020-09-03T12:14:55.954016598Z"
     description: A Helm chart for Kubernetes
     digest: 2df560e05cc0918328adedb7ff6f8e3ce5f61d227495cf6cbdd88575946f59b3
     name: webapp
@@ -241,4 +268,4 @@ entries:
     urls:
     - https://takutakahashi.github.io/charts/webapp/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-03T11:06:11.730035777Z"
+generated: "2020-09-03T12:14:55.940367552Z"
