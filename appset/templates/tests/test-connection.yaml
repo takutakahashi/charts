@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['echo']
-      args: ['ok']
+      args: ['okok']
   restartPolicy: Never
