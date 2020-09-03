@@ -1,0 +1,18 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: test-appset
+spec:
+  test:
+    enable: true
+  rollback:
+    enable: true
+  chart:
+    repository: https://takutakahashi.github.io/charts
+    version: 0.2.0
+    name: appset
+  values:
+    api:
+      revision: latest
+    frontend:
+      revision: takutakahashi
