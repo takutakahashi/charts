@@ -9,10 +9,12 @@ spec:
     enable: true
   chart:
     repository: https://takutakahashi.github.io/charts
-    version: 0.2.0
+    version: 0.2.4
     name: appset
   values:
     api:
+      image: nginx
       revision: latest
     frontend:
+      image: nginx
       revision: takutakahashi
