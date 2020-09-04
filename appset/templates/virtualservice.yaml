@@ -1,0 +1,20 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  annotations:
+  name: {{ include "appset.fullname" . }}
+  namespace: default
+spec:
+  gateways:
+  - {{ include "appset.fullname" . }}-gateway
+  hosts:
+  - '*'
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: {{ include "appset.fullname" . }}-frontend
+        port:
+          number: 80
