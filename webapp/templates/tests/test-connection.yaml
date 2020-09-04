@@ -6,6 +6,7 @@ metadata:
     {{- include "webapp.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test-success
+    sidecar.istio.io/inject: "false"
 spec:
   containers:
     - name: wget
