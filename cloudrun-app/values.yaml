@@ -1,13 +1,13 @@
 app:
-  image: ""
+  image: "nginx"
   livenessProbe:
     httpGet:
       path: /
-      port: http
+      port: 80
   readinessProbe:
     httpGet:
       path: /
-      port: http
+      port: 80
 
 service:
   port: 80
@@ -16,8 +16,8 @@ litestream:
   image: "litestream/litestream:latest"
   dbPath: "/data/app.db"
   replica:
-    uri: "gcs://mybucket/backup/app.db"
-    region: ""
-  encryption: true
-  secretKeyName: ""
+    uri: "gcs://test/backup/app.db"
+    region: "asia-northeast1"
+  encryption: false
+  secretKeyName: "test-key"
 
