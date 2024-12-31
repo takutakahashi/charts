@@ -328,9 +328,9 @@ entries:
   cloudrun-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-31T10:10:34.554446454Z"
+    created: "2024-12-31T13:47:27.5718683Z"
     description: A Helm chart for Kubernetes
-    digest: 750e954e6369a4ffbd9c96d947a430737a339744c4b63ed257109314688c62c9
+    digest: 753a34e5b9d5bfce83d62a79cb5f6b96f63f9afbe19d6d6992d3b59b5bd70128
     name: cloudrun-app
     type: application
     urls:
@@ -397,4 +397,4 @@ entries:
     urls:
     - https://takutakahashi.github.io/charts/webapp/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-31T10:10:34.55408759Z"
+generated: "2024-12-31T13:47:27.571215765Z"
