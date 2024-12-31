@@ -8,6 +8,10 @@ spec:
       containers:
         - name: app
           image: "{{ .Values.app.image }}"
+          command:
+            - "sh"
+            - "-c"
+            - "litestream restore {{ .Values.litestream.replica.uri }} {{ .Values.litestream.dbPath }} && /usr/local/bin/myapp"
           env:
             - name: DB_PATH
               value: "{{ .Values.litestream.dbPath }}"
