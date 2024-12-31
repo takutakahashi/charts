@@ -11,10 +11,14 @@ spec:
           command:
             - "sh"
             - "-c"
-            - "litestream restore {{ .Values.litestream.replica.uri }} {{ .Values.litestream.dbPath }} && /usr/local/bin/myapp"
+            - "litestream restore -o {{ .Values.litestream.dbPath }} {{ .Values.litestream.replica.uri }} && /usr/local/bin/myapp"
           env:
             - name: DB_PATH
               value: "{{ .Values.litestream.dbPath }}"
+            - name: LITESTREAM_REPLICA_URI
+              value: "{{ .Values.litestream.replica.uri }}"
+            - name: REV
+              value: "2"
           ports:
             - containerPort: {{ .Values.service.port }}
               #          livenessProbe:
