@@ -1,0 +1,23 @@
+app:
+  image: ""
+  livenessProbe:
+    httpGet:
+      path: /
+      port: http
+  readinessProbe:
+    httpGet:
+      path: /
+      port: http
+
+service:
+  port: 80
+
+litestream:
+  image: "litestream/litestream:latest"
+  dbPath: "/data/app.db"
+  replica:
+    uri: "gcs://mybucket/backup/app.db"
+    region: ""
+  encryption: true
+  secretKeyName: ""
+

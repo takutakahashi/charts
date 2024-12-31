@@ -1,0 +1,46 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  template:
+    spec:
+      containers:
+        - name: app
+          image: "{{ .Values.app.image }}"
+          ports:
+            - containerPort: {{ .Values.service.port }}
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.app.livenessProbe.httpGet.path }}
+              port: {{ .Values.app.livenessProbe.httpGet.port }}
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.app.readinessProbe.httpGet.path }}
+              port: {{ .Values.app.readinessProbe.httpGet.port }}
+          volumeMounts:
+            - name: app-data
+              mountPath: /data
+        # Litestream サイドカーコンテナ
+        - name: litestream
+          image: "{{ .Values.litestream.image }}"
+          command: ["sh", "-c", "litestream replicate"]
+          env:
+            - name: LITESTREAM_DB_PATH
+              value: "{{ .Values.litestream.dbPath }}"
+            - name: LITESTREAM_REPLICA_URL
+              value: "{{ .Values.litestream.replica.uri }}"
+            - name: LITESTREAM_REPLICA_REGION
+              value: "{{ .Values.litestream.replica.region }}"
+          {{- if .Values.litestream.encryption }}
+            - name: LITESTREAM_ENCRYPTION_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: "{{ .Values.litestream.secretKeyName }}"
+          {{- end }}
+          volumeMounts:
+            - name: app-data
+              mountPath: /data
+      volumes:
+        - name: app-data
+          emptyDir: {}
